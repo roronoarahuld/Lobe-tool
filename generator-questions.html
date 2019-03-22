@@ -110,7 +110,7 @@
 																	</p>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only)"></i>
+																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only) to enter Remarks"></i>
 																</th>
 															</tr>
 															<tr>
@@ -145,7 +145,7 @@
 																	</p>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only)"></i>
+																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only) to enter Remarks"></i>
 																</th>
 															</tr>
 														</tbody>
@@ -221,7 +221,7 @@
 																	</p>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only)"></i>
+																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only) to enter Remarks"></i>
 																</th>
 															</tr>
 															<tr>
@@ -256,7 +256,7 @@
 																	</p>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only)"></i>
+																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only) to enter Remarks"></i>
 																</th>
 															</tr>
 														</tbody>
@@ -334,7 +334,7 @@
 																	</p>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only)"></i>
+																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only) to enter Remarks"></i>
 																</th>
 															</tr>
 															<tr>
@@ -373,7 +373,7 @@
 																	<a href="imgs/img2.jpg" id="sliderimgs" class="html5lightbox slide-thumbsimgs" data-group="mygroup" data-thumbnail="imgs/img2.jpg"></a>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only)"></i>
+																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only) to enter Remarks"></i>
 																</th>
 															</tr>
 														</tbody>
@@ -452,6 +452,10 @@
 																	<p>
 																		Most of the content is accurate and contains correct facts, explanations and examples, and presents accurate activity solutions. However, there may be a few minor errors; or the way the content is presented may lead to minor ambiguity. 
 																	</p>
+																	<a class="evaluate-11">Why is this question important &nbsp; <i class="fas fa-caret-right"></i></a>
+																	<span class="hidden" id="example-11">
+																		Some of the content is accurate, but there are one or more major errors such as incorrect explanations or examples or inaccurate activity solutions; or the way the content is presented is likely to cause major misconception.
+																	</span>
 																</th>
 																<th>
 																	<p>
@@ -459,7 +463,7 @@
 																	</p>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only)"></i>
+																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only) to enter Remarks"></i>
 																</th>
 															</tr>
 															<tr>
@@ -494,7 +498,7 @@
 																	</p>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only)"></i>
+																	<i class="fas fa-comment-alt" data-toggle="tooltip" title="Comment Box (for Evaluator Only) to enter Remarks"></i>
 																</th>
 															</tr>
 														</tbody>
@@ -636,6 +640,10 @@
 
 		$(".evaluate-10").click(function () {
 			$("span#example-10").slideToggle();
+		});
+
+		$(".evaluate-11").click(function () {
+			$("span#example-11").slideToggle();
 		});
 
 		$(".generator-panel .new-rubric h4").click(function () {
