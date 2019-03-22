@@ -118,7 +118,7 @@
 																	</div>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments"></i>
+																	<i class="fas fa-comment-alt" data-target="#comments" title="Enter Remarks" data-toggle="modal"></i>
 																</th>
 																<!-- Comments -->
 																<div class="modal fade cmnt-sect" id="comments"  role="dialog">
@@ -181,7 +181,7 @@
 																	</div>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-1"></i>
+																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-1" title="Enter Remarks"></i>
 																</th>
 																<!-- Comments -->
 																<div class="modal fade cmnt-sect" id="comments-1"  role="dialog">
@@ -284,7 +284,7 @@
 																	</div>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-2"></i>
+																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-2" title="Enter Remarks"></i>
 																</th>
 																<!-- Comments -->
 																<div class="modal fade cmnt-sect" id="comments-2"  role="dialog">
@@ -347,7 +347,7 @@
 																	</div>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-3"></i>
+																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-3" title="Enter Remarks"></i>
 																</th>
 																<!-- Comments -->
 																<div class="modal fade cmnt-sect" id="comments-3"  role="dialog">
@@ -454,7 +454,7 @@
 																	</div>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-4"></i>
+																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-4" title="Enter Remarks"></i>
 																</th>
 																<!-- Comments -->
 																<div class="modal fade cmnt-sect" id="comments-4"  role="dialog">
@@ -520,7 +520,7 @@
 																</th>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-5"></i>
+																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-5" title="Enter Remarks"></i>
 																</th>
 																<!-- Comments -->
 																<div class="modal fade cmnt-sect" id="comments-5"  role="dialog">
@@ -624,7 +624,7 @@
 																	</div>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-7"></i>
+																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-7" title="Enter Remarks"></i>
 																</th>
 																<!-- Comments -->
 																<div class="modal fade cmnt-sect" id="comments-7"  role="dialog">
@@ -696,7 +696,7 @@
 																	</div>
 																</th>
 																<th class="comments-tb">
-																	<i class="fas fa-comment-alt" data-toggle="modal" data-target="#comments-6"></i>
+																	<i class="fas fa-comment-alt" data-target="#comments-6" title="Enter Remarks" data-toggle="modal"></i>
 																</th>
 																<!-- Comments -->
 																<div class="modal fade cmnt-sect" id="comments-6"  role="dialog">
@@ -817,8 +817,6 @@
 <script type="text/javascript" src="js/html5lightbox.js"></script><!--HTML5 slidehow-->
 <script type="text/javascript">
 	$(document).ready(function () {
-		$('[data-toggle="tooltip"]').tooltip();
-
 		$(".evaluate").click(function () {
 			$("span#example-1").slideToggle();
 		});
@@ -947,6 +945,7 @@
 			$("#design").fadeOut().removeClass("active");
 			$("#technological").addClass("active").removeClass("fade");
 		});
+		$('[data-toggle="tooltip"]').tooltip();
 	});
 </script>
 </html>
