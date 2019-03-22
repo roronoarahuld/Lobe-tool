@@ -32,6 +32,15 @@ input:focus, textarea:focus, button:focus, button:active, a:focus, a:active{
 	color: #6b6b6b !important;
 	cursor: default;
 }
+.i_info{
+	font: 14px/18px 'Monts-reg';
+    text-transform: lowercase;
+    padding: 6px 13px;
+    border-radius: 50px;
+    background-color: #49468e;
+    color: #fff;
+}
+.i_info:hover{color: #fff;}
 /*-----------------------------------------------SIGN UP-------------------------------------------------------*/
 .signup-mainbody{
 	background-color: #efefef;
@@ -427,7 +436,7 @@ input:focus, textarea:focus, button:focus, button:active, a:focus, a:active{
 .dashboard-body .content-panel input[type="radio"]{
 	display: none;
 }
-.dashboard-body .content-panel .setting-role{padding: 25px 0;}
+.dashboard-body .content-panel .setting-role{padding: 25px 0 0;}
 .dashboard-body .content-panel .setting-role li{list-style: none; padding: 8px 15px 8px 0; display: inline;}
 .dashboard-body .content-panel .setting-role label{
 	cursor: pointer;
@@ -569,7 +578,7 @@ input:focus, textarea:focus, button:focus, button:active, a:focus, a:active{
 	font: 18px/22px Monts-reg;
 	color: #63468e;
 }
-.incomp-rubric-cnt a{
+.incomp-rubric-cnt a, .comp-rubric-cnt a{
 	display: inline-block;
 	color: #fff;
 	background-color: #63468e;
@@ -1133,6 +1142,7 @@ input:focus, textarea:focus, button:focus, button:active, a:focus, a:active{
 	color: #63468e;
 	margin: 0;
 	padding: 30px 0 20px;
+	width: 100%;
 }
 .dashboard-body .result-panel .row{padding: 15px;}
 .result-panel .new-results-cnt{padding: 3% 0 4%;}
@@ -1474,6 +1484,13 @@ input:focus, textarea:focus, button:focus, button:active, a:focus, a:active{
 	display: block;
 	padding-top: 5px;
 }
+.legend-span{
+	display: block;
+	font: 18px/22px Monts-reg;
+	color: #63468e;
+	padding-left: 0px; 
+	display: block;
+}
 .new-comp-cnt span{
 	font: 18px/22px Monts-reg;
 	color: #63468e;
@@ -1571,4 +1588,56 @@ input:focus, textarea:focus, button:focus, button:active, a:focus, a:active{
 }
 #myBtn:hover {
   background-color: #efefef;
+}
+/*-------------------------------------------LITE, PREMIUM & CUSTOM INFO PAGE-----------------------------------------------------------------*/
+.dashboard-body .lite_cont{
+	background-color: #efefef;
+	padding: 15px 45px;
+	height: 100vh;
+	text-align: center;
+}
+.dashboard-body .prem_cont{
+	background-color: #efefef;
+	padding: 15px 45px;
+	text-align: center;
+}
+.lite_cont h3, .prem_cont h3{
+	font: 40px/44px 'Orator';
+    color: #63468e;
+    margin: 0;
+    padding: 50px 0 20px;
+    text-align: center;
+}
+.lite_cont h5, .prem_cont h5{
+	font: 28px/32px 'Orator';
+    color: #63468e;
+    margin: 0;
+    padding: 25px 0;
+    text-align: left;
+}
+.lite_cont span, .prem_cont span{
+	font: 16px/26px Monts-reg;
+    color: #000;
+    display: block;
+    padding-bottom: 30px;
+    text-align: left;
+}
+.lite_cont ul, .prem_cont ul{
+	padding: 0 20px;
+}
+.lite_cont ul li, .prem_cont ul li{
+	font: 16px/26px Monts-reg;
+    color: #000;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.lite_cont a, .prem_cont a{
+	color: #fff;
+    background-color: #63468e;
+    padding: 8px 46px;
+    margin: 5px 0 0 -10px;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease;
+    display: inline-block;
 }
