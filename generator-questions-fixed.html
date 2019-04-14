@@ -520,6 +520,24 @@
 												</div>  
 											</div>
 										</div>
+										<!-- prmpt -->
+										<div class="modal fade" id="prompt" role="dialog">
+											<div class="modal-dialog modal-lg">
+												<!-- Modal content-->
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">&times;</button>
+													</div>
+													<div class="modal-body">
+														<span>Do you want to evaluate group activity ?</span>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn nextbtn-modal" data-dismiss="modal">YES</button>
+														<button type="button" class="btn nextbtn-modal" data-dismiss="modal">NO</button>
+													</div>
+												</div>  
+											</div>
+										</div>
 										<!-- Completed -->
 										<div class="modal fade" id="complete" role="dialog">
 											<div class="modal-dialog modal-lg">
@@ -549,7 +567,6 @@
 														<span>Please save your work, then logout</span>
 													</div>
 													<div class="modal-footer">
-														<button type="button" class="btn btn-default">SAVE</button>
 														<button type="button" class="btn btn-default">LOGOUT</button>
 													</div>
 												</div>  
@@ -572,6 +589,10 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script><!--bootstrap-->
 <script type="text/javascript" src="js/html5lightbox.js"></script><!--HTML5 slidehow-->
 <script type="text/javascript">
+	$(window).on('load',function(){
+        $('#prompt').modal('show');
+    });
+
 	$(document).ready(function () {
 		$('[data-toggle="tooltip"]').tooltip();
 
